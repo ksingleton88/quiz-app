@@ -75,3 +75,18 @@ label:hover{
     filter: alpha(opacity=60);
     background-color: #000000;
 }
+
+.credits{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+.credits a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:hover{
+	font-style: italic;
+}
