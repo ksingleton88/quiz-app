@@ -7,11 +7,19 @@ body{
 	background-size: cover;
 }
 
+.startHere{
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	cursor: pointer;
+}
+
 .newGame{
 	text-align: right;
 	font-weight: bold;
 	color: #FFFFFF;
 	font-size: 2em;
+	cursor: pointer;
 }
 
 .text h1{
@@ -21,7 +29,7 @@ body{
 	text-shadow: 2px 2px #5D478B;
 }
 
-.questions{
+.question-page{
 	width: 700px; 
 	text-align: center;
 	padding: 2px;
@@ -30,32 +38,32 @@ body{
     background-color: #000000;
     position: relative;
     margin: 0 auto;
+    display: none;
 }
 
-.questions p{
+.question-page p{
 	color: #FFFFFF;
 	margin: 3%;
 	font-size: 2em;
 }
 
 .options{
+	text-align: left;
+	color: #FFFFFF;
 	margin: 0 auto;
 	width: 500px;
 	height: 100px;
-}
-
-.options ul{
-	font-size: 2.4em;
+	font-size: 2em;
 	font-weight: bold;
 	column-count:2;
     -moz-column-count:2; /* Firefox */
     -webkit-column-count:2; /* Safari and Chrome */
 }
 
-.q1a,
-.q1b,
-.q1c,
-.q1d,
+#q1a,
+#q1b,
+#q1c,
+#q1d,
 label:hover{
 	font-style: italic;
 }
@@ -64,16 +72,18 @@ label:hover{
 	font-size: 3em;
 	font-weight: bold;
 	text-align: center;
+	display: none;
 }
-.category1{
+.answer{
+	margin: 0 auto;
 	font-size: 2em;
 	text-align: center;
 	width: 600px;
 	color: #FFFFFF;
-	margin-left: -50px;
 	opacity: 0.6;
     filter: alpha(opacity=60);
     background-color: #000000;
+    display: none;
 }
 
 .credits{

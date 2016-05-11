@@ -4,6 +4,7 @@
 	<title>Beer Me!</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 </head>
 <body>
 	<section class="newGame">
@@ -12,27 +13,88 @@
 	<section class="text">
 		<h1>How well do you know your brew? </h1>
 	</section>
-	<section class="questions">
-		<p class="question1">I was first brewed in 1873 and won the Medaille D'Or at the International Maritime Exposition. After the prohibition was lifted I became the first European beer to be imported to the United States. </p>
+	<section class="startHere">
+		<h1> Click to Begin </h1>
 	</section>
-	<section class="options">
+	<section class="question1 question-page" data-question="1">
+		<p>I was first brewed in 1873 and won the Medaille D'Or at the International Maritime Exposition. After the prohibition was lifted I became the first European beer to be imported to the United States. </p>
 		<form>
-			<ul class="answers">
-				<input type="radio" name="q1" value="a" class="q1a"><label for="q1a">Guinness</label><br>
-				<input type="radio" name="q1" value="b" class="q1b"><label for="q1b">Heineken</label><br>
-				<input type="radio" name="q1" value="c" class="q1c"><label for="q1c">Carling</label><br>
-				<input type="radio" name="q1" value="d" class="q1d"><label for="q1d">Stiegl</label><br>
+			<ul class="options">
+				<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Guinness</label><br>
+				<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Heineken</label><br>
+				<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Carling</label><br>
+				<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Stiegl</label><br>
 			</ul>
 		</form>
+	</section>
+	<section class="question2 question-page" data-question="2">
+		<p> I'm from Leuven, Belgium and labeled as a Pilsner. I'm owned by Anheuser-Busch InBev, the world's largest brewer. I was first launched as a "festive" beer and named afer the Christmas Star in 1926.</p>
+		<form>
+			<ul class="options">
+				<input type="radio" name="q2" value="a" class="q2a>"><label for="q2a">Stiegl</label><br>
+				<input type="radio" name="q2" value="b" class="q2b>"><label for="q2b">Chimay</label><br>
+				<input type="radio" name="q2" value="c" class="q2c>"><label for="q2c">Essen</label><br>
+				<input type="radio" name="q2" value="d" class="q2d>"><label for="q2d">Stella Artois</label><br>
+			</ul>
+		</form>
+	</section>
+	<section class="question3 question-page" data-question="3">
+		<p> I was the first "EXTRA-STRONG" beer in the Philippines. I used to have the nickname of "The Laughing/Happy Horse" and I'm also a brand of San Miguel Brewery.</p>
+		<form>
+			<ul class="options">
+				<input type="radio" name="q3" value="a" class="q3a>"><label for="q3a">Cerveza Negra</label><br>
+				<input type="radio" name="q3" value="b" class="q3b>"><label for="q3b">Gold Eagle</label><br>
+				<input type="radio" name="q3" value="c" class="q3c>"><label for="q3c">Red Horse</label><br>
+				<input type="radio" name="q3" value="d" class="q3d>"><label for="q3d">San Miguel</label><br>
+			</ul>
+		</form>
+	</section>
+	<section class="question4 question-page" data-question="4">
+		<p> I am part of the largest brewery in the United States. I was introduced as a pale lager in 1876 by Adolphus Busch but now come in a variety of different styles. </p>
+		<form>
+			<ul class="options">
+				<input type="radio" name="q4" value="a" class="q4a>"><label for="q4a">Miller</label><br>
+				<input type="radio" name="q4" value="b" class="q4b>"><label for="q4b">Budweiser</label><br>
+				<input type="radio" name="q4" value="c" class="q4c>"><label for="q4c">Coors</label><br>
+				<input type="radio" name="q4" value="d" class="q4d>"><label for="q4d">Shiner Rock</label><br>
+			</ul>
+		</form>
+	</section>
+	<section class="question5 question-page" data-question="5">
+		<p> My brewery was founded in Osaka in 1889. My product is said to have transformed the modern beer industry in Japan. I can be described as having a crisp, dry taste.</p>
+		<form>
+			<ul class="options">
+			<input type="radio" name="q5" value="a" class="q5a>"><label for="q5a">Kirin</label><br>
+			<input type="radio" name="q5" value="b" class="q5b>"><label for="q5b">Sapporo</label><br>
+			<input type="radio" name="q5" value="c" class="q5c>"><label for="q5c">Asahi</label><br>
+			<input type="radio" name="q5" value="d" class="q5d>"><label for="q5d">Suntory</label><br>
+		</form>
+	</section>
 		<div class="results">
 			Answers
 		</div>
-		<div class="category1">
+		<div class="answer answer1" data-answer="1">
 			<p> <strong>Question 1: </strong> The correct answer is <strong>Heineken!</strong></p>
+			<p class="nextQuestion"><strong> Next Question</strong> </p>
 		</div>
-	</section>
+		<div class="answer answer2" data-answer="2">
+			<p> <strong>Question 2: </strong> The correct answer is <strong>Stella Artois!</strong></p>
+			<p class="nextQuestion"><strong> Next Question</strong> </p>
+		</div>
+		<div class="answer answer3" data-answer="3">
+			<p> <strong>Question 3: </strong> The correct answer is <strong>Red Horse!</strong></p>
+			<p class="nextQuestion"><strong> Next Question</strong> </p>
+		</div>
+		<div class="answer answer4" data-answer="4">
+			<p> <strong>Question 4: </strong> The correct answer is <strong>Budwieser!</strong></p>
+			<p class="nextQuestion"><strong> Next Question</strong> </p>
+		</div>
+		<div class="answer answer5" data-answer="5">
+			<p> <strong>Question 5: </strong> The correct answer is <strong>Asahi!</strong></p>
+			<p class="nextQuestion"><strong> Next Question</strong> </p>
+		</div>
 	<section class="credits">
-		<a href="https://unsplash.com/photos/wgm03_9ARRM">Photo Credits: <strong>Unsplash</strong> </a>
+		<a href="https://unsplash.com/photos/wgm03_9ARRM">Images By: <strong>Unsplash</strong> </a>
 	</section>
 	<script src="js/run.js"></script>
 </body>
