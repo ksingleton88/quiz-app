@@ -67,7 +67,7 @@ $(document).ready(function(){
 	function showResult(){
 		$('.question-page').hide();
 
-		var output = ('You Got ' + score + 'Out Of ' + totalQuestions);
+		var output = ('You got ' + score + ' out of ' + totalQuestions + ' correct!');
 		$('.result-page').text(output).show();
 
 	}

@@ -61,6 +61,7 @@ body{
 #q1d,
 label:hover{
 	font-style: italic;
+	cursor: pointer;
 }
 
 .results{
@@ -69,6 +70,7 @@ label:hover{
 	text-align: center;
 	display: none;
 }
+
 .answer{
 	margin: 0 auto;
 	font-size: 2em;
@@ -98,6 +100,7 @@ a:hover{
 
 .result-page{
 	width: 700px; 
+	height: 50px; 
 	text-align: center;
 	padding: 2px;
 	opacity: 0.6;
@@ -107,6 +110,9 @@ a:hover{
     margin: 0 auto;
     display: none;
     color: #FFFFFF;
-	margin: 3%;
 	font-size: 2em;
+}
+
+.nextQuestion{
+	cursor: pointer;
 }
